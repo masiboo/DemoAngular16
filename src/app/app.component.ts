@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoAngular16';
+  isAvailable: boolean = true;
+  value : number = 10;
+
+/*   @HostListener('click') onClick(event: Event){
+    this.isAvailable = !this.isAvailable;
+  } */
 }
