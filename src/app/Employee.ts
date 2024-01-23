@@ -1,5 +1,5 @@
-export class Employee {
-  id: number = 0;
-  name: string = "";
-  age: number = 0;
-};
+export interface IEmployee {
+    id: number;
+    name: string;
+    age: number;
+}
