@@ -59,6 +59,11 @@
 </div>
 
 <br>
-<child-component name="Parent sent Masum"></child-component>
+<child-component childComponentName="Parent sent Masum"></child-component>
+
+<h2>Now child will send data to parent</h2>
+<child-component (parentFunction)="parentFunction($event)"></child-component>
+<div> This name came from the children <h3>{{nameFromChild}}</h3>
+</div>
 
 <router-outlet></router-outlet>

@@ -9,6 +9,12 @@ export class AppComponent {
   title = 'DemoAngular16';
   isAvailable: boolean = true;
   value : number = 10;
+  nameFromChild = "";
+
+parentFunction(data: any) {
+  console.warn(data);
+  this.nameFromChild = data.name;
+}
 
 /*   @HostListener('click') onClick(event: Event){
     this.isAvailable = !this.isAvailable;
