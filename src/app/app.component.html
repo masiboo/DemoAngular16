@@ -70,5 +70,19 @@
 
 <br><br><br>
 <app-employee-list></app-employee-list>
+<br><br><br>
+
+<div>
+  <h2>Pipe Demo here</h2>
+  {{pipeSentence | uppercase }}
+  <br> <br>
+  {{pipeToday | date:'yyyy-MMM-dd'}}
+  <ul>
+    <li *ngFor="let user of pipeUsers | sortList:'name'">
+      {{user.name}} - {{user.age}}
+    </li>
+  </ul>
+  <button (click)="onClickAdd()">Add</button>
+</div>
 
 <router-outlet></router-outlet>
