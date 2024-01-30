@@ -19,6 +19,9 @@ export class AppComponent {
   ];
   pipeSentence: string = 'I love Angular';
 
+  public myTwoWayBidingTitle : string = 'My initial title';
+  public myTwoWayBidingTitle2 : string = 'My initial title2';
+
 parentFunction(data: any) {
   console.warn(data);
   this.nameFromChild = data.name;

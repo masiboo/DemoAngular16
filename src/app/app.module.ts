@@ -15,6 +15,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SortListPipePipe } from './sort-list-pipe.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SortListPipePipe } from './sort-list-pipe.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

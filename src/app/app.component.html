@@ -84,5 +84,18 @@
   </ul>
   <button (click)="onClickAdd()">Add</button>
 </div>
+<br><br><br>
+<div>
+  <h2>2 way data biding demo here</h2>
+ <input type="text" [(ngModel)] = "myTwoWayBidingTitle">
+  <h2>{{myTwoWayBidingTitle}}</h2>
+</div>
+
+<div>
+  <h2>2 way data biding demo here 2</h2>
+  <input type="text" [(ngModel)]="myTwoWayBidingTitle2">
+  <h2>{{myTwoWayBidingTitle2}}</h2>
+</div>
+
 
 <router-outlet></router-outlet>
